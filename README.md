@@ -14,13 +14,21 @@ Tento projekt implementuje Node.js bota, který slouží jako "most" (bridge) pr
 * WhatsApp účet, který bude sloužit jako bot
 * Přístup k IMAP serveru pro příjem Teams zpráv (např. dedikovaný Gmail účet)
 * Přihlašovací údaje do systému Bakaláři
+IMAP Nastavení (Teams Bridge)
+
+## ⚙️ Pro správnou funkci Teams Bridge doporučuju:
+* Vytvořit si dedikovanou emailovou schránku (např. na Gmailu).
+* Nastavit pravidlo pro přesměrování/forwardování zpráv z vašeho Teams kanálu, které mají být přeposlány, do této schránky.
+* Zprávy by měly být odeslány s předmětem: [TEAMS_BRIDGE_ZPRAVA].
+* V Gmailu budete muset povolit Přístup pro méně zabezpečené aplikace nebo použít Hesla aplikací (App Passwords) pro EMAIL_HESLO.
+* Ujistěte se, že máte na IMAP serveru složku/štítkem nastaveno na WHATSAPP_TEAMS_BRIDGE.
 
 ## 🚀 Instalace a Spuštění
 
 ### 1. Klonování Repozitáře
 
-git clone https://github.com/mopik11/WhatsApp-Bridge-for-Bakalari-andMicrosoft-Teams.git
-cd WhatsApp-Bridge-for-Bakalari-andMicrosoft-Teams
+* git clone https://github.com/mopik11/WhatsApp-Bridge-for-Bakalari-andMicrosoft-Teams.git
+* cd WhatsApp-Bridge-for-Bakalari-andMicrosoft-Teams
 
 ### 2. Instalace Závislostí
 
@@ -28,12 +36,12 @@ npm install whatsapp-web.js qrcode-terminal node-imap mailparser fs crypto path 
 
 ### 3. Konfigurace DŮLEŽITÉ: Před spuštěním musíte v souboru se skriptem (index.js nebo app.js) nahradit zástupné hodnoty za skutečné hodnoty:
 
-| `CILOVY_CHAT_ID_TEAMS` | ID WhatsApp chatu pro Teams zprávy. -> `'1234567890@g.us'` |
-| `CILOVY_CHAT_ID_ROZVRH` | ID WhatsApp chatu pro rozvrh Bakaláři. -> `'0987654321@g.us'` |
-| `EMAIL_ADRESA` | Email pro kontrolu Teams zpráv. -> `'bot.email@gmail.com'` |
-| `EMAIL_HESLO` | Heslo/App Password k emailu. -> `'aplication_password'` |
-| `USERNAME / PASSWORD` | Přihlašovací údaje do Bakaláři. -> `'uživatelské jméno'` / `'heslo'` |
+* | `CILOVY_CHAT_ID_TEAMS` | ID WhatsApp chatu pro Teams zprávy. -> `'1234567890@g.us'` |
+* | `CILOVY_CHAT_ID_ROZVRH` | ID WhatsApp chatu pro rozvrh Bakaláři. -> `'0987654321@g.us'` |
+* | `EMAIL_ADRESA` | Email pro kontrolu Teams zpráv. -> `'bot.email@gmail.com'` |
+* | `EMAIL_HESLO` | Heslo/App Password k emailu. -> `'aplication_password'` |
+* | `USERNAME / PASSWORD` | Přihlašovací údaje do Bakaláři. -> `'uživatelské jméno'` / `'heslo'` |
 
 ### 4. Spuštění
 
-node index.js
+* node index.js
