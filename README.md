@@ -19,6 +19,16 @@ Tento projekt implementuje Node.js bota, který slouží jako "most" (bridge) pr
 
 ### 1. Klonování Repozitáře
 
-```bash
 git clone https://github.com/mopik11/WhatsApp-Bridge-for-Bakalari-andMicrosoft-Teams.git
 cd WhatsApp-Bridge-for-Bakalari-andMicrosoft-Teams
+
+### 2. Instalace Závislostí
+
+npm install whatsapp-web.js qrcode-terminal node-imap mailparser fs crypto path axios
+
+### 3. Konfigurace DŮLEŽITÉ: Před spuštěním musíte v souboru se skriptem (index.js nebo app.js) nahradit zástupné hodnoty za skutečné hodnoty:
+CILOVY_CHAT_ID_TEAMSID WhatsApp chatu pro Teams zprávy. - > '1234567890@g.us' 
+CILOVY_CHAT_ID_ROZVRHID WhatsApp chatu pro rozvrh Bakaláři. - > '0987654321@g.us'E
+MAIL_ADRESA Email pro kontrolu Teams zpráv. - > 'bot.email@gmail.com'
+EMAIL_HESLO Heslo/App Password k emailu.'aplication_password'
+USERNAME / PASSWORD Přihlašovací údaje do Bakaláři. - > 'uživatelské jméno' / 'heslo'
