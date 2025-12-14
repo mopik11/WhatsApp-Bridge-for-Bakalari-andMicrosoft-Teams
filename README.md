@@ -27,8 +27,13 @@ cd WhatsApp-Bridge-for-Bakalari-andMicrosoft-Teams
 npm install whatsapp-web.js qrcode-terminal node-imap mailparser fs crypto path axios
 
 ### 3. Konfigurace DŮLEŽITÉ: Před spuštěním musíte v souboru se skriptem (index.js nebo app.js) nahradit zástupné hodnoty za skutečné hodnoty:
-CILOVY_CHAT_ID_TEAMSID WhatsApp chatu pro Teams zprávy. - > '1234567890@g.us' 
-CILOVY_CHAT_ID_ROZVRHID WhatsApp chatu pro rozvrh Bakaláři. - > '0987654321@g.us'E
-MAIL_ADRESA Email pro kontrolu Teams zpráv. - > 'bot.email@gmail.com'
-EMAIL_HESLO Heslo/App Password k emailu.'aplication_password'
-USERNAME / PASSWORD Přihlašovací údaje do Bakaláři. - > 'uživatelské jméno' / 'heslo'
+
+| `CILOVY_CHAT_ID_TEAMS` | ID WhatsApp chatu pro Teams zprávy. -> `'1234567890@g.us'` |
+| `CILOVY_CHAT_ID_ROZVRH` | ID WhatsApp chatu pro rozvrh Bakaláři. -> `'0987654321@g.us'` |
+| `EMAIL_ADRESA` | Email pro kontrolu Teams zpráv. -> `'bot.email@gmail.com'` |
+| `EMAIL_HESLO` | Heslo/App Password k emailu. -> `'aplication_password'` |
+| `USERNAME / PASSWORD` | Přihlašovací údaje do Bakaláři. -> `'uživatelské jméno'` / `'heslo'` |
+
+### 4. Spuštění
+
+node index.js
