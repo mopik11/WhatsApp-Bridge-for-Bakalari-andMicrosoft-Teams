@@ -20,5 +20,5 @@ Tento projekt implementuje Node.js bota, který slouží jako "most" (bridge) pr
 ### 1. Klonování Repozitáře
 
 ```bash
-git clone [VÁŠ_REPOZITÁŘ_URL]
-cd [VÁŠ_REPOZITÁŘ]
+git clone https://github.com/mopik11/WhatsApp-Bridge-for-Bakalari-andMicrosoft-Teams.git
+cd WhatsApp-Bridge-for-Bakalari-andMicrosoft-Teams
